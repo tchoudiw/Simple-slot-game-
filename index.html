@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TP2</title>
+        <link rel="stylesheet" href="TP2B.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Jeu de Roulette</h1>
+            <h2>Gagner beaucoup d'argent </h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="">Acceuil</a></li>
+                <li><a href="">Jeu</a></li>
+               <li> <a href="">contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="container">
+                <div id="spot"> 
+                    <p><dd>
+                        <img src="combinaison.png" alt="Quelques Combinaisons" id="comb"/>
+                        Ce jeu de roulette est une machine à sous simple. Pour joue cliquer sur une image de face des trois roulettes
+                        au démarage, entrez le nombre de credit (argent) de départ. Chaque coup retire 1 dollar, si vous obtenez une combinaison 
+                        gagnante, le nombre de credit qui y afferant vous est ajouté au total de credit disponible.<br/>
+                        Le jeux se termine lors que vous appuyer sur boutton RESET ainsi le credit restant vous êtes restitué et es statistiques du jeu s'affichent. 
+                    </dd>
+                    </p>
+                    
+                </div>
+                <div id="gameBlock">
+                    <img src="cliquer.gif" id="click" />
+                    <div id="imgDisplay">
+                        <img src="" id="play0" class="fruit" />
+                        <img src="" id="play1" class="fruit" />
+                        <img src="" id="play2" class="fruit" />
+
+                    </div>
+                    <div id="resultDisplay">
+                        <div id="winPaid" class="disp">
+                            <span class="affiche" id="gain">0</span>
+                            <span class="desc">GAIN</span>
+                        </div>
+                        <div id="crediTotal" class="disp">
+                            <span class="affiche" id="credit">0</span>
+                            <span class="desc">CREDIT</span>
+                        </div>
+                        <div id="coinsPlay" class="disp">
+                            <span class="affiche">1</span>
+                            <span class="desc">MISE</span>
+                        </div>
+
+                    </div>
+                    <div id="reset">
+                        <img src="" id="money1" />
+                    </div>
+
+                </div>
+                <div id="stat">
+                    <table>
+                        <legend>Tableau des statistiques</legend>
+                        <tr>
+                            <th>mise de départ</th>
+                            <th>nombre de coup joué</th>
+                            <th>Gain total</th>
+                            <th>moyenne par coup </th>
+                            <th>Credit retourné</th>
+                        </tr>
+                        <tr>
+                            <td id="miseDepart"></td>
+                            <td id="nbCoupjoue"></td>
+                            <td id="gainTotal"></td>
+                            <td id="moyCoup"></td>
+                            <td id="crediRetoune"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="listComb"> </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Copyright - Tous droits réservés<br />
+                <a href="#">Me contacter !</a></p>
+        </footer>
+        <script type="text/javascript" src="TP2B.js"></script>
+    </body>
+</html>
